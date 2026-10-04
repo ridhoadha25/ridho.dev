@@ -59,14 +59,16 @@ function About() {
               )}
             </p>
             
-            <p className="text-lg md:text-xl">
+           <p className="text-lg md:text-xl">
               {language === "id" ? (
                 <>
-                  Saya berfokus pada ekosistem <span className="about-highlight">React.js</span> dan <span className="about-highlight">JavaScript</span>, serta senang membangun aplikasi web yang responsif, intuitif, dan andal.
+                  Mengembangkan solusi web interaktif dengan{" "}
+                  <span className="about-highlight">PHP</span> dan ekosistem web modern untuk menciptakan sistem yang responsif dan mudah dikelola.
                 </>
               ) : (
                 <>
-                  I focus on the <span className="about-highlight">React.js</span> and <span className="about-highlight">JavaScript</span> ecosystems, building responsive, intuitive, and reliable web applications.
+                  Developing interactive web solutions with{" "}
+                  <span className="about-highlight">PHP</span> and modern web ecosystems to deliver responsive and maintainable systems.
                 </>
               )}
             </p>
