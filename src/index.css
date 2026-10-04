@@ -1791,7 +1791,7 @@ a.neo-shadow-sm:active {
   gap: 12px;
   max-width: 1060px;
   margin: 0 auto;
-  padding: 11px 0;
+  padding: 14px 24px;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -1801,11 +1801,23 @@ a.neo-shadow-sm:active {
     background 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  .navbar-inner {
+    padding: 14px 20px;
+  }
+}
+
 /* Scrolled state: slightly more compact + heavier shadow */
 .navbar-inner--scrolled {
-  padding: 9px 0;
+  padding: 12px 24px;
   box-shadow: none;
   background: var(--background);
+}
+
+@media (max-width: 767px) {
+  .navbar-inner--scrolled {
+    padding: 12px 20px;
+  }
 }
 
 /* ── Logo ── */
@@ -2029,27 +2041,33 @@ a.neo-shadow-sm:active {
   }
 }
 
-/* ══ MOBILE DRAWER ══ */
+/* ══ MOBILE DRAWER — menyatu dengan navbar ══ */
 .navbar-drawer {
   pointer-events: none;
+  /* Flush ke bawah navbar tanpa gap, full width */
   position: absolute;
-  top: calc(100% + 8px);
-  left: 20px;
-  right: 20px;
+  top: 100%;
+  left: 0;
+  right: 0;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  /* border-top untuk sambungan visual */
+  border-top: 2px solid #000;
 }
 
 .navbar-drawer--open {
   pointer-events: all;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .navbar-drawer__inner {
-  background: #fff;
-  border: 3px solid #000;
-  box-shadow: 6px 6px 0px #000;
+  background: var(--background, #fff);
+  /* Tidak ada border samping/atas, cukup border-bottom & shadow bawah */
+  border-bottom: 3px solid #000;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: 0 6px 0px #000;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -2058,11 +2076,12 @@ a.neo-shadow-sm:active {
 .navbar-drawer__link {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 16px 20px;
+  gap: 18px;
+  /* padding lebih besar agar nyaman di mobile */
+  padding: 20px 24px;
   border-bottom: 2px solid #000;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -2076,6 +2095,10 @@ a.neo-shadow-sm:active {
     background 0.18s ease;
 }
 
+.navbar-drawer__link:last-child {
+  border-bottom: 0;
+}
+
 .navbar-drawer--open .navbar-drawer__link {
   opacity: 1;
   transform: translateX(0);
@@ -2083,13 +2106,13 @@ a.neo-shadow-sm:active {
 
 .navbar-drawer__link:hover,
 .navbar-drawer__link--active {
-  background: var(--link-accent, #fef08a);
+  background: var(--link-accent, #ffe500);
 }
 
 .navbar-drawer__num {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  opacity: 0.4;
+  opacity: 0.35;
   letter-spacing: 0.05em;
   flex-shrink: 0;
 }
