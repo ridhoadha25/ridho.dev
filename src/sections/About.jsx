@@ -45,31 +45,30 @@ function About() {
         {/* ── Main Layout: Text Left, Cards Right ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           
-          {/* ── Left Side: Paragraphs ── */}
-          <div ref={refText} className="reveal-left flex flex-col gap-6 text-black font-medium leading-relaxed">
+         <div ref={refText} className="reveal-left flex flex-col gap-6 text-black font-medium leading-relaxed">
             <p className="text-lg md:text-xl">
               {language === "id" ? (
                 <>
-                  Halo! Saya <span className="about-highlight">M. Ridho Adha</span>, seorang Web Developer yang berfokus membangun antarmuka modern dan interaktif. Saat ini saya berkuliah di <span className="about-highlight">Institut Teknologi Rokan Hilir</span>, Program Studi <span className="about-highlight">Sistem Informasi</span>. Saya senang terus belajar dan menciptakan solusi web yang bermanfaat.
+                  Halo! Saya <span className="about-highlight">M. Ridho Adha</span>, seorang Web Developer sekaligus mahasiswa program studi <span className="about-highlight">Sistem Informasi</span> di <span className="about-highlight">Institut Teknologi Rokan Hilir</span>. Saya memiliki minat besar dalam menerjemahkan logika bisnis yang kompleks menjadi produk digital yang nyaman digunakan.
                 </>
               ) : (
                 <>
-                  Hi! I'm <span className="about-highlight">M. Ridho Adha</span>, a Web Developer focused on building modern, interactive interfaces. I am currently pursuing a degree in <span className="about-highlight">Information Systems</span> at <span className="about-highlight">Institut Teknologi Rokan Hilir</span>. I enjoy learning and creating useful web solutions.
+                  Hi! I'm <span className="about-highlight">M. Ridho Adha</span>, a Web Developer and an <span className="about-highlight">Information Systems</span> student at <span className="about-highlight">Institut Teknologi Rokan Hilir</span>. I have a strong passion for translating complex business logic into seamless digital products.
                 </>
               )}
             </p>
             
-            <p className="text-lg md:text-xl">
-              {language === "id" ? (
-                <>
-                  Saya berfokus pada ekosistem <span className="about-highlight">React.js</span> dan <span className="about-highlight">JavaScript</span>, serta senang membangun aplikasi web yang responsif, intuitif, dan andal.
-                </>
-              ) : (
-                <>
-                  I focus on the <span className="about-highlight">React.js</span> and <span className="about-highlight">JavaScript</span> ecosystems, building responsive, intuitive, and reliable web applications.
-                </>
-              )}
-            </p>
+            <p className="text-lg md:text-xl">
+              {language === "id" ? (
+                <>
+                  Latar belakang tersebut melatih saya untuk memadukan analisis kebutuhan sistem dengan pengembangan web—menciptakan aplikasi yang terstruktur, andal, dan solutif.
+                </>
+              ) : (
+                <>
+                  This background drives me to blend system requirements analysis with web development—creating applications that are structured, reliable, and solution-driven.
+                </>
+              )}
+            </p>
           </div>
 
           {/* ── Right Side: 3 Stacked Cards (Role, Education, Location) ── */}
