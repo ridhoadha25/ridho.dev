@@ -103,7 +103,7 @@ function Home() {
 
               {/* Badge */}
               <div className="absolute -bottom-4 -left-4 z-20 neo-card bg-white px-4 py-2 font-mono text-sm font-semibold uppercase -rotate-6 animate-float hover:rotate-0 hover:scale-105 transition-transform duration-300">
-                {language === "id" ? "🍵 Kreatif & Detail" : "🍵 Creative & Detailed"}
+                {language === "id" ? "🌐 Halo Dunia" : "🌐 Hello World"}
               </div>
             </div>
 
