@@ -63,8 +63,8 @@ function Home() {
           <div ref={r3} className="reveal-up home2-desc-card">
             <p className="home2-desc-card__text">
               {language === "id"
-                ? "Berfokus membangun antarmuka web yang responsif, modern, dan menyenangkan — dari konsep Figma sampai production code."
-                : "Focused on crafting responsive, modern, and delightful web interfaces — from Figma concept to production code."}
+                ? "Membangun produk digital yang menarik dan responsif, menjembatani konsep desain menjadi kode siap pakai."
+                : "Bridging design and development — converting visual concepts into seamless, high-performance web products."}
             </p>
           </div>
 
