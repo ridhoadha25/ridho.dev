@@ -30,8 +30,8 @@ const skillsList = [
   { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", bg: "bg-[#dbeafe]" }, // blue-100
   { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", bg: "bg-[#ccfbf1]" }, // teal-100
   { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", bg: "bg-[#f3e8ff]" }, // purple-100
-  { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", bg: "bg-[#e0e7ff]" }, // indigo-100
-  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg", bg: "bg-[#ffe4e6]" }, // red-100
+  { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg", bg: "bg-[#e0e7ff]" }, // indigo-100
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", bg: "bg-[#ffe4e6]" }, // red-100
   { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", bg: "bg-[#e0f2fe]" }, // sky-100
   { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", bg: "bg-[#fce7f3]" }, // pink-100
 ];
@@ -51,12 +51,12 @@ function SkillBox({ skill, delay }) {
 
       {/* Box */}
       <div
-        className={`w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] ${skill.bg} flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-2 group-hover:-rotate-6 group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]`}
+        className={`w-[72px] h-[72px] md:w-16 md:h-16 lg:w-20 lg:h-20 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] ${skill.bg} flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-2 group-hover:-rotate-6 group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]`}
       >
         <img
           src={skill.icon}
           alt={`${skill.name} icon`}
-          className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain transition-transform duration-300 group-hover:scale-110"
+          className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain transition-transform duration-300 group-hover:scale-110"
         />
       </div>
 
@@ -83,8 +83,8 @@ function Specialization() {
           className="mb-16"
         />
 
-        {/* ── Skills Grid ── */}
-        <div className="flex flex-wrap justify-start gap-6 md:gap-8 lg:gap-10">
+        {/* ── Skills Grid — mobile: 3 cols | desktop: flex-wrap ── */}
+        <div className="grid grid-cols-3 gap-3 md:flex md:flex-wrap md:justify-start md:gap-8 lg:gap-10">
           {skillsList.map((skill, idx) => (
             <SkillBox key={skill.name} skill={skill} delay={idx * 50} />
           ))}
