@@ -56,7 +56,7 @@ function Home() {
 
           <div ref={r2} className="reveal-up home2-role-line">
             <span aria-hidden="true">&gt;_</span>
-            Web Developer
+            Frontend Developer
             <span className="home2-role-cursor" aria-hidden="true" />
           </div>
 
