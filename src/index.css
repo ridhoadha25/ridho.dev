@@ -151,7 +151,7 @@
 .dark [class*="bg-[\#fef9c3]"],
 .dark [class*="bg-[\#dbeafe]"],
 .dark [class*="bg-[\#ccfbf1]"] {
-  filter: brightness(0.45) saturate(0.8);
+  filter: brightness(0.25) saturate(0.7);
 }
 
 /* ── Dark: Skill card box — border & shadow override ── */
@@ -365,7 +365,11 @@
   color: #111111 !important;
 }
 
-/* ── Dark: Home root border override ── */
+/* ── Dark: Home section ── */
+.dark .home2-root {
+  background-color: #111111 !important;
+}
+
 .dark .home2-root * {
   border-color: rgba(255,255,255,0.4);
 }
@@ -422,7 +426,14 @@
   letter-spacing: -0.03em;
 }
 
-/* .about-highlight defined in About section below */
+.about-highlight {
+  padding: 0 0.12em;
+  color: #111111;
+  font-weight: 700;
+  background-color: var(--accent-yellow);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 
 .gradient-text {
   /* Override gradient for neo-brutalism: solid black */
@@ -1576,7 +1587,8 @@ a.neo-shadow-sm:active {
   white-space: nowrap;
 }
 
-
+/* ── (old classes kept for fallback) ── */
+.sk-chip__label { display: none; }
 
 /* ── Category card ── */
 .sk-card {
