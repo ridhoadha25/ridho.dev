@@ -30,8 +30,8 @@ const skillsList = [
   { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", bg: "bg-[#dbeafe]" }, // blue-100
   { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", bg: "bg-[#ccfbf1]" }, // teal-100
   { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", bg: "bg-[#f3e8ff]" }, // purple-100
-  { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg", bg: "bg-[#e0e7ff]" }, // indigo-100
-  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", bg: "bg-[#ffe4e6]" }, // red-100
+  { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", bg: "bg-[#e0e7ff]" }, // indigo-100
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg", bg: "bg-[#ffe4e6]" }, // red-100
   { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", bg: "bg-[#e0f2fe]" }, // sky-100
   { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", bg: "bg-[#fce7f3]" }, // pink-100
 ];
